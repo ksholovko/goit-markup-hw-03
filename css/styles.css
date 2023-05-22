@@ -375,10 +375,13 @@ img {
     margin-bottom: 72px;
 }
 
-.filter-items .filter-btn+.filter-btn {
-    margin-left: 24px;
+.filter-items .filter-btn:not(:last-child) {
+    margin-right: 24px;
 
 }
+
+/* .filter-items .filter-btn +.filter-btn  */
+
 
 .filter-button {
     color: var(--brand-color);
@@ -404,6 +407,7 @@ img {
 .filter-button:focus {
     background-color: var(--pressed-state);
     color: var(--second-background);
+    border: 1px solid transparent;
 }
 
 
@@ -417,11 +421,10 @@ img {
 }
 
 .card-gallery-description {
-    padding-top: 32px;
-    padding-bottom: 32px;
-    padding-left: 16px;
+    padding: 32px 16px;
     background: #FFFFFF;
     border: 1px solid #E7E9FC;
+    border-top: none;
 }
 
 .name-of-project {
@@ -430,6 +433,7 @@ img {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 
 
 }
@@ -440,7 +444,6 @@ img {
     font-size: 16px;
     line-height: 1.5;
 
-    margin-top: 8px;
 }
 
 
