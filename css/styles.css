@@ -41,11 +41,14 @@ ul {
     margin: 0;
 }
 
-
 ul,
 p {
     margin: 0;
     padding: 0;
+}
+
+img {
+    display: block;
 }
 
 .container {
@@ -84,6 +87,7 @@ p {
 
 .page-header {
     display: flex;
+    align-items: center;
 }
 
 .contacts-list {
@@ -103,7 +107,7 @@ p {
     margin-left: auto;
 }
 
-
+.page-header>.logo.link,
 .site-nav .link,
 .contacts-list .link {
     display: flex;
@@ -111,16 +115,16 @@ p {
     padding-bottom: 24px;
 }
 
-
-/* .contacts-list>.conctact-item:not(:last-child) {
+.contacts-list>.conctact-item:not(:last-child) {
     margin-right: 40px;
 
 
-} */
-
-.contacts-list .conctact-item+.conctact-item {
-    margin-left: 40px;
 }
+
+
+/* .contacts-list .conctact-item+.conctact-item {
+    margin-left: 40px;
+} */
 
 
 
@@ -192,7 +196,7 @@ p {
 
 
 .headline {
-    width: 496px;
+    max-width: 496px;
     margin: 0 auto;
     text-align: center;
 
@@ -207,8 +211,11 @@ p {
 
 .main-button {
 
-
+    display: block;
+    min-width: 169px;
     margin-top: 48px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 16px 32px;
     gap: 10px;
     border: 0;
@@ -316,6 +323,7 @@ p {
 .employee-cards {
     display: flex;
     gap: 24px;
+    border-radius: 0px 0px 4px 4px;
 }
 
 .employee-name {
@@ -342,7 +350,7 @@ p {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
 
-    padding: 32px 0;
+    padding: 32px 16px;
 
 }
 
@@ -416,11 +424,6 @@ p {
     border: 1px solid #E7E9FC;
 }
 
-.filter-list-gallery img {
-    display: block;
-}
-
-
 .name-of-project {
     color: var(--headings-color);
     font-weight: 500;
@@ -456,7 +459,8 @@ p {
 
 .logo-bottom-link {
     padding: 0;
-    margin: 0;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 .bottom-logo {
@@ -474,5 +478,4 @@ p {
     display: block;
     width: 264px;
     height: 72px;
-    margin-top: 16px;
 }
